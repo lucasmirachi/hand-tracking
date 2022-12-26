@@ -28,17 +28,19 @@ while True:
                 h, w, c = img.shape
                 cx, cy = int(lm.x*w), int(lm.y*h)
                 #print(id, cx, cy)
-                if id == 4:
-                    cv2.circle(img, (cx,cy), 15, (255,0,255), cv2.FILLED)
-                if id == 8:
-                    cv2.circle(img, (cx,cy), 15, (255,0,255), cv2.FILLED)
+                
+                """ #To highligh a specific finger, change the "id" number according to the hand landmarks figure (https://mediapipe.dev/images/mobile/hand_landmarks.png)
+                if id == 4: # 4 == thumb tip
+                    cv2.circle(img, (cx,cy), 15, (255,0,0), cv2.FILLED)
+                if id == 8: # 8 == Index finger tip
+                    cv2.circle(img, (cx,cy), 15, (255,0,0), cv2.FILLED) """
             mpDraw.draw_landmarks(img, handLms, mpHands.HAND_CONNECTIONS)
 
     cTime = time.time()
     fps = 1/(cTime - pTime)
     pTime = cTime
 
-    cv2.putText(img,str(int(fps)), (10,70), cv2.FONT_HERSHEY_PLAIN, 3, (255,0,255), 3) 
+    cv2.putText(img,str(int(fps)), (10,70), cv2.FONT_HERSHEY_PLAIN, 3, (0,255,255), 3) 
 
     cv2.imshow("Image", img)
     cv2.waitKey(1)
