@@ -42,7 +42,7 @@ class handDetector():
                 landmarkList.append([id, cx, cy])
 
                 if draw:
-                    cv2.circle(img, (cx,cy), 15, (255,0,0), cv2.FILLED)
+                    cv2.circle(img, (cx,cy), 15, (0,0,255), cv2.FILLED)
                         
                 '''To highligh a specific finger, change the "id" number according to the hand landmarks figure (https://mediapipe.dev/images/mobile/hand_landmarks.png)
                 if id == 4: # 4 == thumb tip
@@ -73,7 +73,8 @@ def main():
         cv2.putText(img,str(int(fps)), (10,70), cv2.FONT_HERSHEY_PLAIN, 3, (0,255,255), 3) 
 
         cv2.imshow("Image", img)
-        cv2.waitKey(1)
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
 
 #This means: "you if you're running this script"
 if __name__ == "__main__":
