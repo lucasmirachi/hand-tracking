@@ -28,7 +28,7 @@ while True:
                 h, w, c = img.shape
                 cx, cy = int(lm.x*w), int(lm.y*h)
                 #print(id, cx, cy)
-                
+                cv2.circle(img, (cx,cy), 15, (255,0,0), cv2.FILLED)
                 """ #To highligh a specific finger, change the "id" number according to the hand landmarks figure (https://mediapipe.dev/images/mobile/hand_landmarks.png)
                 if id == 4: # 4 == thumb tip
                     cv2.circle(img, (cx,cy), 15, (255,0,0), cv2.FILLED)
