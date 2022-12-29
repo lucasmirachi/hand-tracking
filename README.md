@@ -41,4 +41,5 @@ As next steps, I pretend to implement this "simple" handtrack project in other m
 
 - [ ] Finger Count
 - [x] Gesture Control of the system's volume
+![Gesture Volume Control](https://github.com/lucasmirachi/gesture-volume-control/blob/main/images/gesturevolumecontrol.gif)
 - [ ] Gesture Control of the mouse
