@@ -10,7 +10,7 @@ Most of this code was taken as reference from this [informative video](https://w
 
 ## Development 
 
-For this code, it was utilized the [MediaPipe](https://google.github.io/mediapipe/) famework. MediaPipe is a framework developed by Google which contains some amazing models that allows us to quickly get started with some fundamental AI problems such as Face Detection, Object Detection, Hair Segmentation and much more!
+For this code, it was utilized the [MediaPipe](https://google.github.io/mediapipe/) framework. MediaPipe is a framework developed by Google which contains some amazing models that allows us to quickly get started with some fundamental AI problems such as Face Detection, Object Detection, Hair Segmentation and much more!
 
 Having said that, the model I'll be working with for this project is going to be the [Hand Tracking](https://google.github.io/mediapipe/solutions/hands). Basically, it combines two main modules: the Palm Detection Model and the Hand Landmark Model.
 
