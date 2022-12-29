@@ -40,6 +40,6 @@ landmarksList = detector.findPositions(img)
 As next steps, I pretend to implement this "simple" handtrack project in other more complex personal projects like:
 
 - [ ] Finger Count
-- [x] Gesture Control of the system's volume
+- [x] [Gesture Control of the system's volume](https://github.com/lucasmirachi/gesture-volume-control)
 ![Gesture Volume Control](https://github.com/lucasmirachi/gesture-volume-control/blob/main/images/gesturevolumecontrol.gif)
 - [ ] Gesture Control of the mouse
