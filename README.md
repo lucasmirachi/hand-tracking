@@ -2,9 +2,13 @@
  
 ![Hand Tracking Gif](./images/handtracking.gif)
 
-This is a study project I developed to create a rial time Hand-Tracking program to better understand how to implement it in future projects.
+## Introduction
+
+This is a study project I developed to create a real time Hand-Tracking program to better understand how to implement it in future projects.
 
 Most of this code was taken as reference from this [informative video](https://www.youtube.com/watch?v=01sAkU_NvOY) created by [Murtaza Hassan](https://www.youtube.com/channel/UCYUjYU5FveRAscQ8V21w81A).
+
+## Development 
 
 For this code, it was utilized the [MediaPipe](https://google.github.io/mediapipe/) famework. MediaPipe is a framework developed by Google which contains some amazing models that allows us to quickly get started with some fundamental AI problems such as Face Detection, Object Detection, Hair Segmentation and much more!
 
@@ -31,5 +35,10 @@ landmarksList = detector.findPositions(img)
 
 ```
 
+## Next Steps
 
+As next steps, I pretend to implement this "simple" handtrack project in other more complex personal projects like:
 
+- [ ] Finger Count
+- [x] Gesture Control of the system's volume
+- [ ] Gesture Control of the mouse
